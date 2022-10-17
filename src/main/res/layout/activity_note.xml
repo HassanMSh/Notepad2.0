@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:padding="10dp"
+        android:textSize="25dp"
+        android:id="@+id/edTitle"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="text"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edNote"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:hint="Note"
+        android:padding="10dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="@color/black"
+            android:layout_marginLeft="20dp"
+            android:onClick="saveNote"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Delete"
+            android:id="@+id/btnDel"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:layout_marginRight="20dp"
+            android:onClick="deleteNote"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
